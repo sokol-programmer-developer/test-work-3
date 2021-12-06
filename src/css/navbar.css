@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.navbar_default,
+.nav_logo,
+.nav_logo_pic,
+.nav_desktop,
+.nav_desktop_ul,
+.nav_desktop_li,
+.nav_desktop_link
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar_default{
+    grid-template-columns: repeat(2,1fr);
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(000,000,000, 0.4);
+    border: 0.2vh solid rgba(255,255,255, 0.5);
+    z-index: 1;
+}
+
+
+.nav_logo{  width: 22vw; height: 10vh; }
+.nav_logo_pic{  width: 15vw; height: 5vh; }
+
+.nav_desktop{ width: 70vw;  height: 10vh; }
+
+.nav_desktop_ul{
+    grid-template-columns: repeat(6,1fr);
+    width: 60vw;
+    height: 5vh;
+}
+
+.nav_desktop_li{
+    width: 10vw;
+    height: 5vh;
+    border-bottom: 0.2vh solid rgba(255,255,255,0);
+    transition: all 0.25s linear;
+}
+
+.nav_desktop_li:hover{
+    border-bottom: 0.2vh solid #ffa500;
+    transition: all 0.25s linear;
+}
+
+.nav_desktop_li:hover .nav_desktop_link{
+    color: #ffa500;
+    transition: all 0.25s linear;
+}
+
+.nav_desktop_link{
+    width: 10vw;
+    height: 5vh;
+    color: rgba(255,255,255, 1);
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.25s linear;
+
+}
+
+.navbar_mobile{
+    display: none;
+}
